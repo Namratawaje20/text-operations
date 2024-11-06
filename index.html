@@ -121,6 +121,18 @@
             document.getElementById("outputText").value = inputText.toUpperCase();
         }
 
+        function toLowerCase() {
+            const inputText = document.getElementById("inputText").value;
+            document.getElementById("outputText").value = inputText.toLowerCase();
+        }
+
+        function wordCount() {
+            const inputText = document.getElementById("inputText").value.trim();
+            const words = inputText.split(/\s+/).filter(Boolean).length;
+            document.getElementById("outputText").value = `Word Count: ${words}`;
+        }
+
+
 </script>
 
     
